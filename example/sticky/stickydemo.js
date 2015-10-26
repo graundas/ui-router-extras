@@ -55,5 +55,10 @@
       } );
     });
   });
+  
+  app.run(['$state', '$rootScope', function($state, $rootScope) {
+    $rootScope.$state = $state;
+  }]);
+
 })();
   
